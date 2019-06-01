@@ -11,7 +11,8 @@ RUN set -ex ; \
         nginx ;
 
 ENV NAXSI_VERSION=0.56 \
-    NAXSI_TAG=untagged-afabfc163946baa8036f
+    NAXSI_TAG=untagged-afabfc163946baa8036f \
+    NGINX_VERSION=1.15.0
 
 WORKDIR /tmp
 
