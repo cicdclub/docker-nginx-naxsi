@@ -1,4 +1,4 @@
-FROM alpine:3.9 AS nginx-naxsi-build
+FROM alpine:3.8 AS nginx-naxsi-build
 
 RUN set -ex ; \
     addgroup -S nginx ; \
