@@ -1,19 +1,19 @@
-[![Docker Stars](https://img.shields.io/docker/stars/dmgnx/nginx-naxsi.svg)](https://hub.docker.com/r/dmgnx/nginx-naxsi/)
+<!---
+[![Docker Stars](https://img.shields.io/docker/stars/dmgnx/nginx-naxsi.svg)](https://hub.docker.com/r/dmgnx/nginx-naxsi/) 
 [![Docker Pulls](https://img.shields.io/docker/pulls/dmgnx/nginx-naxsi.svg)](https://hub.docker.com/r/dmgnx/nginx-naxsi/)
 [![Docker Automated buil](https://img.shields.io/docker/automated/dmgnx/nginx-naxsi.svg)](https://hub.docker.com/r/dmgnx/nginx-naxsi/)
-
-**NOT MAINTAINED ANYMORE**
 
 # Supported tags and respective `Dockerfile` links
 
 -   [`0.56-1.15.0`, `0.56-1.15`, `mainline`, `latest` (*mainline/Dockerfile*)](https://github.com/dmgnx/docker-nginx-naxsi/blob/master/mainline/Dockerfile)
 -   [`0.56-1.14.0`, `0.56-1.14`, `stable` (*stable/Dockerfile*)](https://github.com/dmgnx/docker-nginx-naxsi/blob/master/stable/Dockerfile)
 
+-->
 # How to use this image
 
 ```console
 $ docker run --name nginx-naxsi -p 80:80 \
-    -v $(pwd):/usr/share/nginx/html -d dmgnx/nginx-naxsi
+    -v $(pwd):/usr/share/nginx/html -d cicdclub/nginx-naxsi
 ```
 
 This will start a nginx service with default configuration, serving current working directory as you website.

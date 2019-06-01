@@ -1,0 +1,4 @@
+node {
+    pipeline = fileLoader.fromGit('build/Jenkinsfile','https://github.com/cicdclub/pipeline.git','master',null,'')
+    pipeline.call()
+}

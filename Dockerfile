@@ -10,9 +10,8 @@ RUN set -ex ; \
         -G nginx \
         nginx ;
 
-ENV NAXSI_VERSION=@NAXSI_VERSION@ \
-    NAXSI_TAG=@NAXSI_TAG@ \
-    NGINX_VERSION=@NGINX_VERSION@
+ENV NAXSI_VERSION=0.56 \
+    NAXSI_TAG=untagged-afabfc163946baa8036f
 
 WORKDIR /tmp
 
@@ -184,7 +183,7 @@ COPY docker-entrypoint.sh /docker-entrypoint.sh
 
 
 FROM scratch
-LABEL maintainer "Dimitri G. <dev@dmgnx.net>"
+LABEL maintainer "Juan Carrillo inetshell@gmail.com>"
 
 COPY --from=nginx-naxsi-build / /
 
