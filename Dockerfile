@@ -109,7 +109,6 @@ RUN set -ex ; \
         --with-compat \
         --with-file-aio \
         --with-http_v2_module \
-        --with-luajit \
         " \
     ; \
     \
